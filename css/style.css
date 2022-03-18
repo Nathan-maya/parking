@@ -23,7 +23,10 @@ img{
   display: none;
 }
 .menu-bg{
-  min-width: 600px;
+  position: fixed;
+  z-index: 10000;
+  width: 100%;
+  padding: 10px;
   background: #24272A;
 }
 .estrutura-header{
@@ -39,8 +42,8 @@ img{
   grid-area: header;
   margin: 0 auto;
   grid-template-columns: 1.554fr 1fr 1fr;
-  padding: 20px 0;
   margin-left: 20px;
+  background: #24272A;
 
 }
 
@@ -126,7 +129,7 @@ img{
   max-width: 100%;
   min-width: 500px;
   width: auto;
-  height: 85vh;
+  height: 95vh;
   position: relative;
 
 
@@ -272,7 +275,7 @@ img{
 
 .grid-container{
   max-width: 1200px;
-  margin: 35px auto;
+  margin: 40px auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas: 
