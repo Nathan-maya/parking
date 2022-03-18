@@ -9,7 +9,7 @@ function moverElemento(event){
 
   const positionX = (positionPrimeiroMenuX - positionCorporativoX)
 
-  corporativo.style.transform = `translate3d(${positionX + 3}px, 0px, 0px) `;
+  corporativo.style.transform = `translate3d(${positionX + 40}px, 0px, 0px) `;
   corporativo.style.transition = 'transform .6s';
   addClass(event)
 }
@@ -27,6 +27,7 @@ function addClass(event){
 }
 
 function verificarClick(event){
+  event.preventDefault();
   if(corporativo.hasAttribute('style')){
     corporativo.style.removeProperty('transform');
     corporativo.style.transition = 'transform .6s';
@@ -38,5 +39,4 @@ function verificarClick(event){
     moverElemento(event);
   }
 }
-
-corporativo.addEventListener('click', verificarClick)
+corporativo.children[0].addEventListener('click', verificarClick)

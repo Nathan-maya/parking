@@ -26,19 +26,27 @@ img{
   min-width: 600px;
   background: #24272A;
 }
-.header{
+.estrutura-header{
   max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "header header header ";
   margin: 0 auto;
+}
+.header{
+  display: grid;
+  grid-area: header;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr;
   padding: 20px 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+
 }
 
 .logo{
   display: flex;
   align-items: center;
+  justify-content: left;
 }
 .logo h1{
   margin:0 5px;
@@ -84,7 +92,7 @@ img{
   cursor: pointer;
   margin: 0 10px;
 }
-.menu-corporativo{
+.corporativo .menu-corporativo{
   display: none;
 }
 
@@ -98,6 +106,19 @@ img{
   font-size: 15px;
   color:#9FEAFF;
   padding: 10px;
+}
+
+.menu-corporativo ul{
+  display: flex;
+  width: 300px;
+}
+
+.menu-corporativo li a{
+  display: block;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
 }
 
 .container-slider{
