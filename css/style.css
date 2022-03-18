@@ -119,6 +119,33 @@ img{
   opacity: 1;
 }
 
+.nav-pager{
+  position: absolute;
+  top: calc(85vh - 10%);
+  left: 50vw;
+}
+.container-slider .nav-pager a {
+  background-color: #9FEAFF;
+  color: #9FEAFF;
+  font-size: 0;
+  line-height: 0;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  border: 2px solid #fff;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-decoration: none;
+  margin: 0 2px;
+}
+
+.nav-pager a.active{
+  background-color: #24272A;
+  color:#24272A;
+}
+
+
 .container-radio{
   position: absolute;
   top: calc(85vh - 10%);
