@@ -1,28 +1,48 @@
 export default function carrossel() {
-  let time = 2000,
+  let time = 5000,
     currentImageIndex = 0,
     images = document.querySelectorAll('.container-slider img'),
     radio = document.querySelectorAll('.container-label input'),
     maxImage = images.length;
 
-  console.log(radio)
-  function start(){ 
+  function start(event){ 
     setInterval(() => {
-      nextImage()
+      nextImage(event)
       },time);
     }
-
-  function nextImage() {
+  function verificarClick(){
+    setInterval(() => {
+      radio.forEach((item,index) => {
+        if (radio[index].checked){
+          images[currentImageIndex].classList.remove("selected")
+          radio[currentImageIndex].checked = false;
+          
+          images[index].classList.add("selected")
+          radio[index].checked = true;
+        }
+      }) 
+    },1000)
+  }
+  
+  function nextImage(event) {
     images[currentImageIndex].classList.remove("selected")
     radio[currentImageIndex].checked = false;
-    
+
+    radio.forEach((item,index) => {
+      if (radio[index].checked){
+        currentImageIndex = index
+      }
+    }) 
+
     currentImageIndex++
     if (currentImageIndex >= maxImage){
       currentImageIndex = 0
     }
+
     images[currentImageIndex].classList.add("selected")
     radio[currentImageIndex].checked = true;
   }
 
   window.addEventListener("load",start)
+  window.addEventListener("load",verificarClick)
 }
