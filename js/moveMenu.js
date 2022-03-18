@@ -35,8 +35,6 @@ function verificarClick(event){
     },500)
     addClass(event)
   } else {
-    console.log('moveu elemento')
-    
     moverElemento(event);
   }
 }
