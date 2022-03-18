@@ -38,8 +38,9 @@ img{
   display: grid;
   grid-area: header;
   margin: 0 auto;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1.554fr 1fr 1fr;
   padding: 20px 0;
+  margin-left: 20px;
 
 }
 
@@ -289,6 +290,7 @@ img{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-left: 20px;
 }
 .nav-stage img{
   height: 80%;
@@ -306,6 +308,7 @@ img{
 .nav-stage-app{
   display: grid;
   grid-column: 1/3;
+  margin-left: 20px;
 }
 .nav-stage-img-app{
   display: grid;
