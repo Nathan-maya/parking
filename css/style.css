@@ -27,7 +27,7 @@ img{
   background: #24272A;
 }
 .header{
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px 0;
   display: flex;
@@ -104,7 +104,7 @@ img{
   max-width: 100%;
   min-width: 500px;
   width: auto;
-  height: 90vh;
+  height: 85vh;
   position: relative;
 
 
@@ -114,7 +114,7 @@ img{
   opacity: 0;
   position: absolute;
   width: 100%;
-  height: 95%;
+  height: 100%;
   transition: opacity 800ms;
 }
 
@@ -249,17 +249,75 @@ img{
 }
 
 .grid-container{
-  max-width: 960px;
-  margin:0 auto;
+  max-width: 1200px;
+  margin: 35px auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas: 
-  "stage stage stage stage";
+  "stage stage stage stage"
+  "stage stage stage stage"
+}
+.stage{
+  grid-area: stage;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 30px;
+}
+.nav-stage{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .nav-stage img{
-  height: 100%;
-  width: 100%;
+  height: 80%;
+  width: 50%;
 }
+.nav-stage h2{
+  margin: 20px auto;
+  color: #4ad6fd;
+}
+.nav-stage p{
+  text-align: center;
+  width: 100%;
+  line-height: 1.6;
+}
+.nav-stage-app{
+  display: grid;
+  grid-column: 1/3;
+}
+.nav-stage-img-app{
+  display: grid;
+  grid-column: 3/-1;
+}
+.nav-stage-img-app img{
+  max-height: 256px;
+}
+.nav-stage-app h1{
+  color: #4ad6fd;
+
+}
+.nav-stage-app p{
+  text-align: left;
+  width: 80%;
+  line-height: 1.6;
+  margin: 10px;
+}
+
+.btn-site{
+  margin-top: 20px;
+  height: 30px;
+  width: 180px;
+  padding: 10px 0;;
+  padding-bottom: 26px;
+  background-color: #4ad6fd;
+  text-align: center;
+  color: #24272A;
+  font-weight: 700;
+  line-height: 17px;
+}
+
+
 @media (max-width: 600px){
   .header{
     justify-content:space-between;
