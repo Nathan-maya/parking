@@ -289,11 +289,13 @@ img{
 .nav-stage-img-app{
   display: grid;
   grid-column: 3/-1;
+  margin: 100px 0;
 }
 .nav-stage-img-app img{
-  max-height: 256px;
+  max-height: 286px;
 }
 .nav-stage-app h1{
+  margin-bottom: 30px;
   color: #4ad6fd;
 
 }
