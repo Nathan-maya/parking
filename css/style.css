@@ -312,12 +312,13 @@ img{
   grid-area: stage;
   grid-column: 1/3;
   margin-left: 20px;
+  margin-top: 50px;
 }
 .nav-stage-img-app{
   display: grid;
   grid-area: stage;
   grid-column: 3/-1;
-  margin: 100px 0;
+  margin-top: 50px;
 }
 .nav-stage-img-app img{
   max-height: 286px;
@@ -353,6 +354,7 @@ img{
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   gap: 30px;
+  margin-top:50px;
 }
 .blog h1{
   grid-column: 1/-1;
@@ -376,6 +378,72 @@ img{
   font-weight: bold;
 }
 
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer{
+  background: #24272A;
+  color: #FFFFF2;
+  padding: 20px 0;
+  margin-top:20px
+}
+
+.footer h3{
+  font-size: 18px;
+  line-height: 25px;
+  color: #4ad6fd;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-weight: bold;
+}
+.footer h3:after{
+  content: "";
+  display:block;
+  width: 60px;
+  height: 3px;
+  background: #4ad6fd;
+  margin: 6px 0 12px 0;
+
+}
+
+.footer_historia {
+  padding-right: 40px;
+}
+
+.footer_contato ul li{
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer_contato ul li+li{
+  margin:5px auto;
+}
+
+.footer_redes ul li{
+  display: inline-block;
+  margin-right: 10px;
+}
+.footer_redes ul li a {
+  border: 3px solid #4ad6fd;
+  display: block;
+  padding: 10px;
+}
+.footer_redes ul li a:hover {
+  border: 3px solid #fff;
+}
+
+.background-copy{
+  background: #4ad6fd;
+}
+.copy{
+  grid-column: 1/-1;
+  margin: 0 auto;
+  padding: 10px 0;
+}
 
 @media (max-width: 600px){
   .header{
