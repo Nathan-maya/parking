@@ -1,4 +1,7 @@
 import initCarrossel from "./modules/carrossel.js";
+// import fetchCep from "./modules/fetchCEP.js";
+import inputCEP from ".//modules/inputCEP.js";
+
 const btnMobile = document.getElementById('btn-mobile');
 
 function toggleMenu(event){
@@ -11,3 +14,5 @@ btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
 
 initCarrossel();
+
+inputCEP();
