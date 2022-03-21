@@ -20,7 +20,6 @@ export default function carrossel() {
           
           images[index].classList.add("selected");
           radio[index].checked = true;
-          console.log("radio checked");
         }
       });
     }, 1000);
@@ -30,7 +29,7 @@ export default function carrossel() {
     images.forEach((item,index) => {
       images[index].classList.remove("selected");
     })
-    
+
     radio[currentImageIndex].checked = false;
 
     radio.forEach((item, index) => {
