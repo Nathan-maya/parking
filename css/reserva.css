@@ -1,15 +1,115 @@
-#bg-img{
+#bg-img {
   height: 340px;
   width: 100%;
 }
-#region-text{
-  margin-left: 20px;
+#region-text {
   text-align: center;
+  padding: 20px;
 }
-#region-text h1{
+#region-text h1 {
   font-size: 36px;
+  color: #4ad6fd;
 }
-.container-reserva{
+
+#region-text p {
+  margin: 20px 0;
+  font-size: 14;
+}
+.container-reserva {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.grid-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
+}
+.grid-card h2{
+  grid-column: 1/-1;
+  font-size: 32px;
+  color: #4ad6fd;
+  line-height: 35px;
+  margin-bottom: 10px;
+}
+.grid-card #link-unidade {
+  grid-column: 1/-1;
+  margin: 0 auto;
+  color: #24272a;
+  background-color: #9feaff;
+  padding: 15px 30px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin:45px auto;
+  transition: 400ms;
+}
+.grid-card #link-unidade:hover{
+  background-color: #4ad6fd;
+  color: #fff;
+}
+.card {
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px black;
+  transition: transform 400ms, opacity 500ms;
+  width: 100%;
+}
+.card p {
+  font-size: 14px;
+}
+.card:hover{
+  /* transform: translateY(-10px); */
+  transform: scale(1.05);
+}
+.card .card-img img {
+  min-height: 186px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 6px 6px 0px 0px;
+}
+.card-content {
+  margin: 5px auto;
+}
+.card-content .title {
+  font-size: 20px;
+  font-weight: 900;
+}
+.btn-reserva {
+  margin-top: 40px;
+}
+.btn-reserva p {
+  margin-bottom: 20px;
+}
+.btn-reserva a {
+  padding: 10px;
+  color: #24272a;
+  background-color: #4ad6fd;
+  border-radius: 6px;
+}
+.card-valor-diaria {
+  margin-top: 30px;
+  padding: 15px;
+  background: hsla(193, 98%, 64%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(193, 98%, 64%, 0.7) 51%,
+    hsla(202, 98%, 53%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(193, 98%, 64%, 0.7) 51%,
+    hsla(202, 98%, 53%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(193, 98%, 64%, 0.7) 51%,
+    hsla(202, 98%, 53%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4AD6FD", endColorstr="#11A6FD", GradientType=1 );
 }
