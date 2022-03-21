@@ -41,10 +41,9 @@ img{
   display: grid;
   grid-area: header;
   margin: 0 auto;
-  grid-template-columns: 1.554fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   margin-left: 20px;
   background: #24272A;
-
 }
 
 .logo{
@@ -56,6 +55,12 @@ img{
   margin:0 5px;
   font-size: 18px;
   color:#9FEAFF;
+}
+.logo img{
+  min-width: 48px;
+  min-height: 48px;
+  width: 100%;
+  height: 100%;
 }
 .nav-menu{
   display: flex;
@@ -81,6 +86,7 @@ img{
 
 .item-menu.mover .menu-cliente {
   visibility: hidden;
+  width: 100%;
 }
 
 
@@ -97,12 +103,18 @@ img{
   margin: 0 10px;
 }
 .corporativo .menu-corporativo{
-  display: none;
+  transition: opacity .3s ease-in;
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
-.corporativo.ativo .menu-corporativo {
-  display:flex;
+.corporativo.ativo .menu-corporativo{
+  opacity: 1;
+  width: 100%;
+  height: auto;
 }
+
 
 .login a{
   display: block;
@@ -446,6 +458,12 @@ img{
 }
 
 @media (max-width: 600px){
+  .estrutura-header{
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header";
+    margin: 0 auto;
+  }
   .header{
     justify-content:space-between;
   }
@@ -458,15 +476,34 @@ img{
   .nav-menu .login{
     margin-left: 0;
   }
-  .nav-menu .corporativo{
-    display: block;
+  .corporativo{
+    margin:0 0;
+  }
+  .corporativo{
+    display:block;
     right: 0;
+    padding-top:5px;
+    left: 30px;
+    position: absolute;
+    width: 100%;
+    top: 210px;
+    z-index: 1000;
+    transition: .6s;
+    height: 0;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  .menu-corporativo, .login{
+    padding: 10px 0;
+  }
+  .item-menu ul{
+    margin-left: 25px;
   }
   .nav-menu .item-menu {
     display: block;
     position: absolute;
     width: 100%;
-    top: 90px;
+    top: 70px;
     right: 0;
     background:#24272A;
     z-index: 1000;
@@ -475,14 +512,20 @@ img{
     visibility: hidden;
     overflow-y: hidden;
   }
-  .corporativo{
-    margin:0 0;
-  }
+
   .item-menu ul li {
     padding: 5px;
   }
-  .corporativo{
-    padding: 5px;
+  .corporativo.ativo-hamburguer{
+    height: calc(100vh - 210px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  .corporativo.visible .menu-corporativo{
+    padding-bottom: 0;
+    opacity: 1;
+    height: auto;
+    display: block;
   }
   .nav-menu.ativo .item-menu{
     height: calc(100vh - 90px);
@@ -524,5 +567,4 @@ img{
     transform: rotate(-135deg);
     top: -7px;
   }
-  
 }

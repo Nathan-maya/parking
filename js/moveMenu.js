@@ -1,6 +1,7 @@
 const primeiroMenu = document.getElementById('primeiroMenu');
 const corporativo = document.querySelector('.corporativo');
-const itemMenu = document.querySelector('.item-menu')
+const itemMenu = document.querySelector('.item-menu');
+const nav = document.querySelector('.nav-menu');
 
 
 function moverElemento(event){
@@ -9,19 +10,23 @@ function moverElemento(event){
 
   const positionX = (positionPrimeiroMenuX - positionCorporativoX)
 
-  corporativo.style.transform = `translate3d(${positionX + 150}px, 0px, 0px) `;
+  corporativo.style.transform = `translate3d(${positionX}px, 0px, 0px) `;
   corporativo.style.transition = 'transform .6s';
   addClass(event)
 }
 
 function addClass(event){
   if (event.type === 'touchstart') event.preventDefault();
-  setTimeout(()=> {
-    itemMenu.classList.toggle('mover');
-  },250)
-  setTimeout(()=> {
-    corporativo.classList.toggle('ativo')
-  },100)
+  if( window.innerWidth > 600){
+    setTimeout(()=> {
+      itemMenu.classList.toggle('mover');
+    },250)
+    setTimeout(()=> {
+      corporativo.classList.toggle('ativo')
+      console.log('ativo')
+    },100)
+  }
+
   
 
 }
@@ -39,4 +44,18 @@ function verificarClick(event){
     moverElemento(event);
   }
 }
-corporativo.children[0].addEventListener('click', verificarClick)
+
+setInterval(() => {
+  if( window.innerWidth > 600){
+    nav.classList.remove('ativo')
+    corporativo.classList.remove('visible')
+    corporativo.classList.remove('ativo-hamburguer')
+    corporativo.children[0].addEventListener('click', verificarClick)
+  }
+  else{
+    itemMenu.classList.remove('mover');
+    corporativo.style.removeProperty('transform');
+  }
+},100)
+
+
