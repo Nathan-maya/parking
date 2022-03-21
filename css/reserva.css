@@ -1,0 +1,15 @@
+#bg-img{
+  height: 340px;
+  width: 100%;
+}
+#region-text{
+  margin-left: 20px;
+  text-align: center;
+}
+#region-text h1{
+  font-size: 36px;
+}
+.container-reserva{
+  max-width: 1200px;
+  margin: 0 auto;
+}
