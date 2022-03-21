@@ -23,7 +23,6 @@ function addClass(event){
     },250)
     setTimeout(()=> {
       corporativo.classList.toggle('ativo')
-      console.log('ativo')
     },100)
   }
 
