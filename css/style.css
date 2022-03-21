@@ -490,10 +490,7 @@ h2 {
     visibility: hidden;
     overflow-y: hidden;
   }
-  .menu-corporativo,
-  .login {
-    padding: 10px 0;
-  }
+
   .item-menu ul {
     margin-left: 25px;
   }
