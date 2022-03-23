@@ -1,8 +1,10 @@
 .container h1{
   color: #4AD6FD;;
 }
-.grid-card{
+.grid-card {
   grid-column: 1/-1;
+}
+#grid-card-congonhas{
   display: grid;
   grid-template-columns: 190px 190px 190px 190px;
   justify-content: center;

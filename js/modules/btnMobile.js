@@ -16,7 +16,7 @@ export default function btnMobile() {
   btnMobile.addEventListener("touchstart", toggleMenu);
 
   setInterval(() => {
-    if (window.innerWidth <= 600) {
+    if (window.innerWidth <= 720) {
       corporativo.classList.remove("ativo");
       corporativo.children[0].addEventListener("click", visibleCorporativo);
     }
