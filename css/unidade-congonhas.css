@@ -1,0 +1,69 @@
+.container h1{
+  color: #4AD6FD;;
+}
+.grid-card{
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 190px 190px 190px 190px;
+  justify-content: center;
+}
+.card-diaria-congonhas{
+  border-radius: 6px;
+  box-shadow: -1px 15px 30px -12px black;
+  transition: transform 400ms, opacity 500ms;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 180px;
+  width: 100%;
+}
+.card-diaria-congonhas:hover{
+  transform: scale(1.05);
+}
+.card-diaria-congonhas h2{
+  color: #fff;
+}
+
+.locais{
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 30px auto;
+  gap: 20px;
+  
+}
+.locais h1{
+  grid-column: 1/-1;
+  margin: 40px auto 30px auto;
+}
+.locais-img img{
+  width: 100%;
+  border-radius: 6px 6px 0 0;
+}
+.locais-container{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 300px;
+  border-radius: 0 0 6px 6px;
+  box-shadow: -1px 15px 30px -12px black;
+  
+}
+
+.locais-content{
+  margin: 10px 15px;
+}
+.locais-content h2{
+  margin-bottom: 5px;
+  color: #4AD6FD;
+}
+.locais-content p:nth-child(2){
+  font-weight: 700;
+  font-size:14px;
+  color: #666666;
+  margin-bottom: 10px;
+}
+.locais-content p:nth-child(3){
+  margin-bottom: 20px;
+}

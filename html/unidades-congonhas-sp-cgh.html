@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parking</title>
+    <link rel="stylesheet" href="../css/geral.css" />
+  </head>
+  <body>
+    <div class="menu-bg">
+      <div class="estrutura-header">
+        <header class="header">
+          <section class="logo">
+            <a href="index.html"
+              ><img src="../img/streamline-icon-car-garage-1@48x48 2.svg"
+            /></a>
+            <h1>Parking</h1>
+          </section>
+
+          <nav class="nav-menu">
+            <section class="item-menu">
+              <ul class="menu-cliente">
+                <li id="primeiroMenu">
+                  <a href="parking-reserva.html">Parking Reserva</a>
+                </li>
+                <li><a href="#">Parking Planos</a></li>
+                <li><a href="#">Eventos</a></li>
+              </ul>
+            </section>
+
+            <button id="btn-mobile">
+              <span id="hamburguer"></span>
+            </button>
+          </nav>
+
+          <section class="corporativo">
+            <h1>Corporativo</h1>
+
+            <div class="menu-corporativo">
+              <ul>
+                <li><a href="#">Planos Corporativo</a></li>
+                <li><a href="#">Gestão Parking</a></li>
+              </ul>
+            </div>
+
+            <section class="login">
+              <a href="#">Login</a>
+            </section>
+          </section>
+        </header>
+        <!-- fim div estrutura-header -->
+      </div>
+      <!-- FIM DIV "menu-BG" -->
+    </div>
+
+    <section class="container-content-unidade">
+      <section class="bg-img">
+        <img src="../img/estacionamento-viracopos-redimensionado.png" alt="" />
+        <div id="text-title-aeroporto">
+          <p>Estacionamento oficial do Aeroporto de Congonhas (CGH)</p>
+          <p>Faça sua Parking Reserva e aproveite os preços promocionais</p>
+        </div>
+      </section>
+      <section class="container-form">
+        <section class="painel-form">
+          <div class="form-item">
+            <label class="control-label" for="edit-entrada-data"
+              >Data de entrada</label
+            >
+
+            <input
+              autocomplete="off"
+              placeholder="Selecionar data"
+              class="form-control form-text datepicker-input"
+              type="date"
+              id="edit-entrada-data"
+              name="entrada[data]"
+              value=""
+              size="60"
+              maxlength="128"
+            />
+          </div>
+
+          <div class="form-item">
+            <label class="control-label" for="edit-entrada-data"
+              >Hora de entrada</label
+            >
+
+            <select
+              class="form-control form-select"
+              id="edit-entrada-hora"
+              name="entrada[hora]"
+            >
+              <option value="0" selected="selected">-</option>
+              <option value="00-00">00:00</option>
+              <option value="00-30">00:30</option>
+              <option value="01-00">01:00</option>
+              <option value="01-30">01:30</option>
+              <option value="02-00">02:00</option>
+              <option value="02-30">02:30</option>
+              <option value="03-00">03:00</option>
+              <option value="03-30">03:30</option>
+              <option value="04-00">04:00</option>
+              <option value="04-30">04:30</option>
+              <option value="05-00">05:00</option>
+              <option value="05-30">05:30</option>
+              <option value="06-00">06:00</option>
+              <option value="06-30">06:30</option>
+              <option value="07-00">07:00</option>
+              <option value="07-30">07:30</option>
+              <option value="08-00">08:00</option>
+              <option value="08-30">08:30</option>
+              <option value="09-00">09:00</option>
+              <option value="09-30">09:30</option>
+              <option value="10-00">10:00</option>
+              <option value="10-30">10:30</option>
+              <option value="11-00">11:00</option>
+              <option value="11-30">11:30</option>
+              <option value="12-00">12:00</option>
+              <option value="12-30">12:30</option>
+              <option value="13-00">13:00</option>
+              <option value="13-30">13:30</option>
+              <option value="14-00">14:00</option>
+              <option value="14-30">14:30</option>
+              <option value="15-00">15:00</option>
+              <option value="15-30">15:30</option>
+              <option value="16-00">16:00</option>
+              <option value="16-30">16:30</option>
+              <option value="17-00">17:00</option>
+              <option value="17-30">17:30</option>
+              <option value="18-00">18:00</option>
+              <option value="18-30">18:30</option>
+              <option value="19-00">19:00</option>
+              <option value="19-30">19:30</option>
+              <option value="20-00">20:00</option>
+              <option value="20-30">20:30</option>
+              <option value="21-00">21:00</option>
+              <option value="21-30">21:30</option>
+              <option value="22-00">22:00</option>
+              <option value="22-30">22:30</option>
+              <option value="23-00">23:00</option>
+              <option value="23-30">23:30</option>
+            </select>
+          </div>
+
+          <div class="form-item">
+            <label class="control-label" for="edit-entrada-data"
+              >Data de saída</label
+            >
+
+            <input
+              autocomplete="off"
+              placeholder="Selecionar data"
+              class="form-control form-text datepicker-input"
+              type="date"
+              id="edit-entrada-data"
+              name="entrada[data]"
+              value=""
+              size="60"
+              maxlength="128"
+            />
+          </div>
+
+          <div class="form-item">
+            <label class="control-label" for="edit-entrada-data"
+              >Hora de entrada</label
+            >
+
+            <select
+              class="form-control form-select"
+              id="edit-entrada-hora"
+              name="entrada[hora]"
+            >
+              <option value="0" selected="selected">-</option>
+              <option value="00-00">00:00</option>
+              <option value="00-30">00:30</option>
+              <option value="01-00">01:00</option>
+              <option value="01-30">01:30</option>
+              <option value="02-00">02:00</option>
+              <option value="02-30">02:30</option>
+              <option value="03-00">03:00</option>
+              <option value="03-30">03:30</option>
+              <option value="04-00">04:00</option>
+              <option value="04-30">04:30</option>
+              <option value="05-00">05:00</option>
+              <option value="05-30">05:30</option>
+              <option value="06-00">06:00</option>
+              <option value="06-30">06:30</option>
+              <option value="07-00">07:00</option>
+              <option value="07-30">07:30</option>
+              <option value="08-00">08:00</option>
+              <option value="08-30">08:30</option>
+              <option value="09-00">09:00</option>
+              <option value="09-30">09:30</option>
+              <option value="10-00">10:00</option>
+              <option value="10-30">10:30</option>
+              <option value="11-00">11:00</option>
+              <option value="11-30">11:30</option>
+              <option value="12-00">12:00</option>
+              <option value="12-30">12:30</option>
+              <option value="13-00">13:00</option>
+              <option value="13-30">13:30</option>
+              <option value="14-00">14:00</option>
+              <option value="14-30">14:30</option>
+              <option value="15-00">15:00</option>
+              <option value="15-30">15:30</option>
+              <option value="16-00">16:00</option>
+              <option value="16-30">16:30</option>
+              <option value="17-00">17:00</option>
+              <option value="17-30">17:30</option>
+              <option value="18-00">18:00</option>
+              <option value="18-30">18:30</option>
+              <option value="19-00">19:00</option>
+              <option value="19-30">19:30</option>
+              <option value="20-00">20:00</option>
+              <option value="20-30">20:30</option>
+              <option value="21-00">21:00</option>
+              <option value="21-30">21:30</option>
+              <option value="22-00">22:00</option>
+              <option value="22-30">22:30</option>
+              <option value="23-00">23:00</option>
+              <option value="23-30">23:30</option>
+            </select>
+          </div>
+          <div class="form-item">
+            <a href="#">Escolher a sua vaga</a>
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <section class="container">
+      <h1 id="title-diaria-viracopos">
+        Faça sua Parking Reserva com diária a partir de R$50,00
+      </h1>
+      <div class="grid-card">
+        <div class="card-diaria-congonhas">
+          <div class="container-diaria">
+            <h2>Diaria</h2>
+            <p>a partir de</p>
+            <p>R$56,00</p>
+          </div>
+          <div class="card-diaria-content">
+            <p>Edificio-Garagem</p>
+            <ul>
+              <li>Vagas Cobertas</li>
+              <li>Estacionamento oficial do Aeroporto</li>
+            </ul>
+            <a href="#">Selecionar data</a>
+          </div>
+        </div>
+
+        <div class="card-diaria-congonhas">
+          <div class="container-diaria">
+            <h2>Diaria</h2>
+            <p>a partir de</p>
+            <p>R$56,00</p>
+          </div>
+          <div class="card-diaria-content">
+            <p>Edificio-Garagem</p>
+            <ul>
+              <li>Vagas Cobertas</li>
+              <li>Estacionamento oficial do Aeroporto</li>
+            </ul>
+            <a href="#">Selecionar data</a>
+          </div>
+        </div>
+
+        <div class="card-diaria-congonhas">
+          <div class="container-diaria">
+            <h2>Diaria</h2>
+            <p>a partir de</p>
+            <p>R$56,00</p>
+          </div>
+          <div class="card-diaria-content">
+            <p>Edificio-Garagem</p>
+            <ul>
+              <li>Vagas Cobertas</li>
+              <li>Estacionamento oficial do Aeroporto</li>
+            </ul>
+            <a href="#">Selecionar data</a>
+          </div>
+        </div>
+
+        <div class="card-diaria-congonhas">
+          <div class="container-diaria">
+            <h2>Diaria</h2>
+            <p>a partir de</p>
+            <p>R$56,00</p>
+          </div>
+          <div class="card-diaria-content">
+            <p>Edificio-Garagem</p>
+            <ul>
+              <li>Vagas Cobertas</li>
+              <li>Estacionamento oficial do Aeroporto</li>
+            </ul>
+            <a href="#">Selecionar data</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="locais">
+        <h1>Temos os melhores locais para o seu carro</h1>
+        <div class="locais-container">
+          <div class="locais-img">
+            <img src="../img/edificio-garagem-congonhas_0.jpg" alt="" />
+          </div>
+          <div class="locais-content">
+            <h2>Edifício-Garagem</h2>
+            <p>Deixe seu carro a poucos metros do embarque e desembarque</p>
+            <p>
+              Estacionando no Edifício-Garagem, você deixa seu carro em um
+              ambiente seguro para viajar com mais tranquilidade. Conte mais
+              tecnologia, mais qualidade e todas facilidades que só a maior da
+              América Latina pode oferecer.
+            </p>
+          </div>
+        </div>
+
+        <div class="locais-container">
+          <div class="locais-img">
+            <img src="../img/edificio-garagem-congonhas_0.jpg" alt="" />
+          </div>
+          <div class="locais-content">
+            <h2>Edifício-Garagem</h2>
+            <p>Deixe seu carro a poucos metros do embarque e desembarque</p>
+            <p>
+              Estacionando no Edifício-Garagem, você deixa seu carro em um
+              ambiente seguro para viajar com mais tranquilidade. Conte mais
+              tecnologia, mais qualidade e todas facilidades que só a maior da
+              América Latina pode oferecer.
+            </p>
+          </div>
+        </div>
+
+        <div class="locais-container">
+          <div class="locais-img">
+            <img src="../img/edificio-garagem-congonhas_0.jpg" alt="" />
+          </div>
+          <div class="locais-content">
+            <h2>Edifício-Garagem</h2>
+            <p>Deixe seu carro a poucos metros do embarque e desembarque</p>
+            <p>
+              Estacionando no Edifício-Garagem, você deixa seu carro em um
+              ambiente seguro para viajar com mais tranquilidade. Conte mais
+              tecnologia, mais qualidade e todas facilidades que só a maior da
+              América Latina pode oferecer.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="princiais-vantagens">
+        <h1>Conheça as principais vantagens</h1>
+        <div class="grid-vantagens">
+          <div class="vantagens">
+            <img src="../img/car-group.svg" alt="" />
+            <h2>Edifício-Garagem</h2>
+            <p>
+              Reserve antes mesmo de sair de casa e pague com cartão de crédito.
+              Nada de tíquetes ou filas, saia do carro e vá direto para o seu
+              voo.
+            </p>
+          </div>
+
+          <div class="vantagens">
+            <img src="../img/car-group.svg" alt="" />
+            <h2>Segurança</h2>
+            <p>
+              Viaje sem se preocupar! Enquanto você aproveita, seu carro estará
+              sempre protegido com a gente.
+            </p>
+          </div>
+
+          <div class="vantagens">
+            <img src="../img/car-group.svg" alt="" />
+            <h2>Independencia</h2>
+            <p>
+              Assim que chegar de viagem esqueça daquela preocupação de esperar
+              um táxi ou carro para ir embora. É do avião direto para o seu
+              carro.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="rota">
+        <h1>Encontre a melhor rota</h1>
+      </div>
+    </section>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8734.377995630464!2d-47.1370819093832!3d-23.010786612768715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8ca7445c3047b%3A0x88a68ef7d857f2a3!2sAeroporto%20Internacional%20de%20Viracopos!5e0!3m2!1spt-BR!2sbr!4v1647963718973!5m2!1spt-BR!2sbr"
+      width="100%"
+      height="600"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+    ></iframe>
+
+    <footer>
+      <!--Inicio footer-->
+      <div class="footer">
+        <div class="container">
+          <div class="footer_historia">
+            <h3>Nossa História</h3>
+            <p>
+              O verdadeiro segredo da felicidade está em ter um genuíno
+              interesse por todos os detalhes da vida cotidiana cotidiana.
+              interesse por todos os detalhes da vida cotidiana cotidiana.
+            </p>
+          </div>
+
+          <div class="footer_contato">
+            <h3>Contato</h3>
+            <ul>
+              <li>11 9334343-4150</li>
+              <li>contato@bikcraft.com</li>
+              <li>São Paulo - SP</li>
+            </ul>
+          </div>
+
+          <div class="footer_redes">
+            <h3>Redes Sociais</h3>
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/" target="_blank"
+                  ><img
+                    src="../img/redes-sociais/facebook_icon_blue.png"
+                    alt="Facebook"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/" target="_blank"
+                  ><img
+                    src="../img/redes-sociais/instagram_icon_blue.png"
+                    alt="Instagram"
+                /></a>
+              </li>
+              <li>
+                <a href="http://twitter.com/" target="_blank"
+                  ><img
+                    src="../img/redes-sociais/twitter_icon_blue.png"
+                    alt="Twitter"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="background-copy">
+        <div class="container">
+          <div class="copy">
+            <p>Parking © 2022. Alguns direitos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--Final do footer-->
+    <script type="module" src="../js/script.js"></script>
+    <script src="../js/moveMenu.js"></script>
+  </body>
+</html>
