@@ -17,7 +17,7 @@ function moverElemento(event){
 
 function addClass(event){
   if (event.type === 'touchstart') event.preventDefault();
-  if( window.innerWidth > 600){
+  if( window.innerWidth > 720){
     setTimeout(()=> {
       itemMenu.classList.toggle('mover');
     },250)
@@ -45,7 +45,7 @@ function verificarClick(event){
 }
 
 setInterval(() => {
-  if( window.innerWidth > 600){
+  if( window.innerWidth > 720){
     nav.classList.remove('ativo')
     corporativo.classList.remove('visible')
     corporativo.classList.remove('ativo-hamburguer')
