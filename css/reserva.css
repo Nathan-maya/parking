@@ -88,6 +88,13 @@
   background-color: #4ad6fd;
   border-radius: 6px;
 }
+.btn-reserva .saiba-mais{
+  font-weight: 400;
+  color: #4ad6fd;
+}
+.btn-reserva .saiba-mais:hover{
+  text-decoration: underline;
+}
 .card-valor-diaria {
   margin-top: 30px;
   padding: 15px;

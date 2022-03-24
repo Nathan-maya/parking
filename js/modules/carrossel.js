@@ -10,7 +10,8 @@ export default function carrossel() {
       nextImage(event);
     }, time);
   }
-  function verificarClick() {
+  function verificarClick(event) {
+    if (event.type === "touchstart") event.preventDefault();
     setInterval(() => {
       radio.forEach((item, index) => {
         if (radio[index].checked) {
