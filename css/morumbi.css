@@ -1,0 +1,68 @@
+.container .title-morumbi{
+  grid-column: 1/-1;
+}
+.container .title-morumbi h1{
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 50px;
+}
+.container .title-morumbi h1:nth-child(1){
+  margin-top: 90px;
+}
+.container .title-morumbi p{
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+  margin: 30px auto 70px auto;
+}
+
+.container .title-eventos{
+  margin-left: 20px;
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.container .title-eventos h1{
+  grid-column: 1/-1;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 50px;
+  margin: 0 auto;
+}
+.container .title-eventos .card-eventos{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0 0 100px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.container .title-eventos .card-eventos img{
+  display: block;
+  border-radius: 6px 6px 0 0;
+}
+.container .title-eventos .card-eventos h2{
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 10px;
+  margin-left: 15px;
+  color: #4ad6fd;;
+}
+.container .title-eventos .card-eventos a{
+  position: absolute;
+  background-color: #4ad6fd;
+  color: #24272a;;
+  padding: 10px 150px;
+  left: 15px;
+  right: 15px;
+  bottom: 5px;
+  width: auto;
+  transition: 800ms;
+}
+.container .title-eventos .card-eventos a:hover{
+  background-color: red;
+}
