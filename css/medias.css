@@ -273,28 +273,28 @@
 
 @media (max-width: 600px){
   .header{
-    max-width: 500px;
+    max-width: 600px;
     width: 100%;
   }
   .container-slider{
-    max-width: 300px;
+    max-width: 600px;;
   }
   .inner-booking{
     left: 10vw;
   }
   .form-input input{
-    width: 400px;
+    width: 500px;
   }
   ::-webkit-input-placeholder{
     font-size:10px;
   }
   .container-radio{
-    left: 20vw;
+    left: 25vw;
   }
   .grid-container{
-    max-width: 300px;
+    max-width: 600px;
   }
   .footer .container{
-    max-width: 500px;
+    max-width: 600px;
   }
 }
