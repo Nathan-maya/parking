@@ -255,14 +255,14 @@
     width: 100%;
   }
   .blog{
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     max-width: 500px;
     width: 100%;
   }
   .container{
     max-width: 500px;
     width: 100%;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     margin: 0 auto;
     gap: 10px;
   }
@@ -272,7 +272,12 @@
 }
 
 @media (max-width: 412px){
-
+  body{
+    overflow-x: hidden;
+  }
+  .estrutura-header{
+    grid-template-columns: 100%;
+  }
   .menu-bg{
     max-width: 412px;
   }
@@ -282,7 +287,7 @@
     margin-left: 0;
   }
   .inner-booking{
-    left: 3vw;
+    left: 5vw;
   }
   .form-input input{
     width: 350px;
@@ -297,13 +302,16 @@
     left: 12vw;
   }
   .container-slider{
-    min-width: 400px
+    min-width: 400px;
   }
   .grid-container{
     max-width: 400px;
   }
+  .footer{
+    width: 100%;
+  }
   .footer .container{
-    max-width: 412px;
+    max-width: 400px;
     margin-left: 20px;
   }
 }
