@@ -271,30 +271,30 @@
   }
 }
 
-@media (max-width: 412px){
+@media (max-width: 600px){
   .header{
-    max-width: 380px;
+    max-width: 500px;
     width: 100%;
   }
   .container-slider{
-    max-width: 400px;
+    max-width: 300px;
   }
   .inner-booking{
     left: 10vw;
   }
   .form-input input{
-    width: 350px;
+    width: 400px;
   }
   ::-webkit-input-placeholder{
-    font-size:6px;
+    font-size:10px;
   }
   .container-radio{
-    left: 18vw;
+    left: 20vw;
   }
   .grid-container{
-    max-width: 412px;
+    max-width: 300px;
   }
   .footer .container{
-    max-width: 412px;
+    max-width: 500px;
   }
 }
