@@ -271,22 +271,24 @@
   }
 }
 
-@media (max-width: 600px){
+@media (max-width: 420px){
+
   .header{
-    max-width: 600px;
+    max-width: 410px;
     width: 100%;
-  }
-  .container-slider{
-    max-width: 600px;;
+    margin-left: 0;
   }
   .inner-booking{
     left: 10vw;
   }
   .form-input input{
-    width: 500px;
+    width: 360px;
+  }
+  .btn-search{
+    background-size: 14px;
   }
   ::-webkit-input-placeholder{
-    font-size:10px;
+    font-size:9px;
   }
   .container-radio{
     left: 25vw;
@@ -296,5 +298,6 @@
   }
   .footer .container{
     max-width: 600px;
+    margin-left: 20px;
   }
 }
