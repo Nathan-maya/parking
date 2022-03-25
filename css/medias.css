@@ -271,10 +271,8 @@
   }
 }
 
-@media (max-width: 420px){
-  body{
-    overflow-x: hidden;
-  }
+@media (max-width: 412px){
+
   .menu-bg{
     max-width: 412px;
   }
@@ -299,7 +297,7 @@
     left: 12vw;
   }
   .container-slider{
-    min-width: 412px
+    min-width: 400px
   }
   .grid-container{
     max-width: 400px;
